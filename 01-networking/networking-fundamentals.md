@@ -31,3 +31,38 @@ IP addresses are important in cybersecurity because analysts use them to investi
 - Different devices can have different IP addresses.
 - Private IP addresses are commonly used inside local networks.
 - IP addresses are important when investigating network activity.
+
+
+## Subnet Masks
+
+A subnet mask determines which portion of an IP address represents the network and which portion represents the host.
+
+For example:
+
+- IP address: 192.168.1.10
+- Subnet mask: 255.255.255.0
+- CIDR notation: 192.168.1.10/24
+
+A /24 network commonly uses the first three octets to identify the network, while the final octet identifies individual hosts.
+
+### Example
+
+The following devices are on the same /24 network:
+
+- PC1: 192.168.1.10/24
+- PC2: 192.168.1.20/24
+
+The following device is on a different network:
+
+- PC3: 192.168.2.10/24
+
+### Cybersecurity Importance
+
+Subnetting helps security professionals understand network boundaries and identify how systems are organized. Network segmentation can also be used to restrict communication between systems and limit an attacker's ability to move through a network.
+
+## What I Learned
+
+- A subnet mask separates the network portion from the host portion of an IP address.
+- /24 corresponds to 255.255.255.0.
+- Devices with the same network portion belong to the same subnet.
+- Understanding subnets is important for network monitoring, security analysis, and network segmentation.
